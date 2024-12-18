@@ -2,5 +2,10 @@
   "extends": [
     "next/core-web-vitals",
     "next/typescript"
-  ]
+  ],
+  "rules": {
+    // 覆盖默认的 'no-unused-vars' 规则，改为 TypeScript 版本
+    "@typescript-eslint/no-unused-vars": "warn", // 将未使用的变量提示为警告
+    "no-unused-vars": "warn" // 将未使用的变量提示为警告
+  }
 }
